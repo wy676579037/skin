@@ -34,7 +34,7 @@
 -(void)exchangeImage:(UIImageView *)imageView{
     
     NSBundle *currentBundle = [SkinManager sharedInstance].bundle;
-    NSBundle *exchangeBundle = [[SkinManager sharedInstance] getExchangeBundle:currentBundle];
+    NSBundle *exchangeBundle = [[SkinManager sharedInstance] getImageExchangeBundle:currentBundle];
     if (exchangeBundle) {
         return;
     }

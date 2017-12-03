@@ -19,7 +19,7 @@
 
 -(void)setOriginBundle:(NSBundle *)originB exchangeBundle:(NSBundle *)otherB;
 
--(NSBundle *)getExchangeBundle:(NSBundle *)bundle;
+-(NSBundle *)getImageExchangeBundle:(NSBundle *)bundle;
 
 @property(strong,nonatomic) UIImageViewCoder *imageViewCoder;
 

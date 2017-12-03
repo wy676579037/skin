@@ -33,7 +33,7 @@
     [self.skinDic setObject:otherB forKey:[originB bundlePath]];
 }
 
--(NSBundle *)getExchangeBundle:(NSBundle *)bundle{
+-(NSBundle *)getImageExchangeBundle:(NSBundle *)bundle{
     return self.skinDic[bundle.bundlePath];
 }
 
