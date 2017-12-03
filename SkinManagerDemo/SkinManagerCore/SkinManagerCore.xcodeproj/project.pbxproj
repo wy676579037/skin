@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF1F3C401FD3ECEE007FA2AB /* SkinManagerCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1F3C3E1FD3ECEE007FA2AB /* SkinManagerCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF8D9D1FD3EDC2005CF574 /* NSBundle+Skin.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF8D841FD3EDC2005CF574 /* NSBundle+Skin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF8D9E1FD3EDC2005CF574 /* NSBundle+Skin.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFF8D851FD3EDC2005CF574 /* NSBundle+Skin.m */; };
+		CFFF8D9F1FD3EDC2005CF574 /* NSCoder+Skin.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF8D861FD3EDC2005CF574 /* NSCoder+Skin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF8DA01FD3EDC2005CF574 /* NSCoder+Skin.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFF8D871FD3EDC2005CF574 /* NSCoder+Skin.m */; };
+		CFFF8DA11FD3EDC2005CF574 /* UIBarButtonItem+Skin.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF8D881FD3EDC2005CF574 /* UIBarButtonItem+Skin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF8DA21FD3EDC2005CF574 /* UIBarButtonItem+Skin.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFF8D891FD3EDC2005CF574 /* UIBarButtonItem+Skin.m */; };
+		CFFF8DA31FD3EDC2005CF574 /* UIButton+Skin.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF8D8A1FD3EDC2005CF574 /* UIButton+Skin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF8DA41FD3EDC2005CF574 /* UIButton+Skin.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFF8D8B1FD3EDC2005CF574 /* UIButton+Skin.m */; };
+		CFFF8DA51FD3EDC2005CF574 /* UIImage+Skin.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF8D8C1FD3EDC2005CF574 /* UIImage+Skin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF8DA61FD3EDC2005CF574 /* UIImage+Skin.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFF8D8D1FD3EDC2005CF574 /* UIImage+Skin.m */; };
+		CFFF8DA71FD3EDC2005CF574 /* UIImageView+Skin.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF8D8E1FD3EDC2005CF574 /* UIImageView+Skin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF8DA81FD3EDC2005CF574 /* UIImageView+Skin.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFF8D8F1FD3EDC2005CF574 /* UIImageView+Skin.m */; };
+		CFFF8DA91FD3EDC2005CF574 /* UINib+Skin.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF8D901FD3EDC2005CF574 /* UINib+Skin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF8DAA1FD3EDC2005CF574 /* UINib+Skin.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFF8D911FD3EDC2005CF574 /* UINib+Skin.m */; };
+		CFFF8DAB1FD3EDC2005CF574 /* UIStoryboard+Skin.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF8D921FD3EDC2005CF574 /* UIStoryboard+Skin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF8DAC1FD3EDC2005CF574 /* UIStoryboard+Skin.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFF8D931FD3EDC2005CF574 /* UIStoryboard+Skin.m */; };
+		CFFF8DAD1FD3EDC2005CF574 /* SkinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFF8D941FD3EDC2005CF574 /* SkinManager.m */; };
+		CFFF8DAE1FD3EDC2005CF574 /* SkinManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF8D951FD3EDC2005CF574 /* SkinManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF8DAF1FD3EDC2005CF574 /* UIBarButtonItemCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF8D971FD3EDC2005CF574 /* UIBarButtonItemCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF8DB01FD3EDC2005CF574 /* UIBarButtonItemCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFF8D981FD3EDC2005CF574 /* UIBarButtonItemCoder.m */; };
+		CFFF8DB11FD3EDC2005CF574 /* UIButtonCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF8D991FD3EDC2005CF574 /* UIButtonCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF8DB21FD3EDC2005CF574 /* UIButtonCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFF8D9A1FD3EDC2005CF574 /* UIButtonCoder.m */; };
+		CFFF8DB31FD3EDC2005CF574 /* UIImageViewCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF8D9B1FD3EDC2005CF574 /* UIImageViewCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF8DB41FD3EDC2005CF574 /* UIImageViewCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFF8D9C1FD3EDC2005CF574 /* UIImageViewCoder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF1F3C3B1FD3ECEE007FA2AB /* SkinManagerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkinManagerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1F3C3E1FD3ECEE007FA2AB /* SkinManagerCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkinManagerCore.h; sourceTree = "<group>"; };
+		CF1F3C3F1FD3ECEE007FA2AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFFF8D841FD3EDC2005CF574 /* NSBundle+Skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Skin.h"; sourceTree = "<group>"; };
+		CFFF8D851FD3EDC2005CF574 /* NSBundle+Skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Skin.m"; sourceTree = "<group>"; };
+		CFFF8D861FD3EDC2005CF574 /* NSCoder+Skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCoder+Skin.h"; sourceTree = "<group>"; };
+		CFFF8D871FD3EDC2005CF574 /* NSCoder+Skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCoder+Skin.m"; sourceTree = "<group>"; };
+		CFFF8D881FD3EDC2005CF574 /* UIBarButtonItem+Skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Skin.h"; sourceTree = "<group>"; };
+		CFFF8D891FD3EDC2005CF574 /* UIBarButtonItem+Skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Skin.m"; sourceTree = "<group>"; };
+		CFFF8D8A1FD3EDC2005CF574 /* UIButton+Skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Skin.h"; sourceTree = "<group>"; };
+		CFFF8D8B1FD3EDC2005CF574 /* UIButton+Skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Skin.m"; sourceTree = "<group>"; };
+		CFFF8D8C1FD3EDC2005CF574 /* UIImage+Skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Skin.h"; sourceTree = "<group>"; };
+		CFFF8D8D1FD3EDC2005CF574 /* UIImage+Skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Skin.m"; sourceTree = "<group>"; };
+		CFFF8D8E1FD3EDC2005CF574 /* UIImageView+Skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Skin.h"; sourceTree = "<group>"; };
+		CFFF8D8F1FD3EDC2005CF574 /* UIImageView+Skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Skin.m"; sourceTree = "<group>"; };
+		CFFF8D901FD3EDC2005CF574 /* UINib+Skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINib+Skin.h"; sourceTree = "<group>"; };
+		CFFF8D911FD3EDC2005CF574 /* UINib+Skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINib+Skin.m"; sourceTree = "<group>"; };
+		CFFF8D921FD3EDC2005CF574 /* UIStoryboard+Skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Skin.h"; sourceTree = "<group>"; };
+		CFFF8D931FD3EDC2005CF574 /* UIStoryboard+Skin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Skin.m"; sourceTree = "<group>"; };
+		CFFF8D941FD3EDC2005CF574 /* SkinManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkinManager.m; sourceTree = "<group>"; };
+		CFFF8D951FD3EDC2005CF574 /* SkinManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinManager.h; sourceTree = "<group>"; };
+		CFFF8D971FD3EDC2005CF574 /* UIBarButtonItemCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBarButtonItemCoder.h; sourceTree = "<group>"; };
+		CFFF8D981FD3EDC2005CF574 /* UIBarButtonItemCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBarButtonItemCoder.m; sourceTree = "<group>"; };
+		CFFF8D991FD3EDC2005CF574 /* UIButtonCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonCoder.h; sourceTree = "<group>"; };
+		CFFF8D9A1FD3EDC2005CF574 /* UIButtonCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonCoder.m; sourceTree = "<group>"; };
+		CFFF8D9B1FD3EDC2005CF574 /* UIImageViewCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewCoder.h; sourceTree = "<group>"; };
+		CFFF8D9C1FD3EDC2005CF574 /* UIImageViewCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewCoder.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF1F3C371FD3ECEE007FA2AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF1F3C311FD3ECEE007FA2AB = {
+			isa = PBXGroup;
+			children = (
+				CF1F3C3D1FD3ECEE007FA2AB /* SkinManagerCore */,
+				CF1F3C3C1FD3ECEE007FA2AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF1F3C3C1FD3ECEE007FA2AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF1F3C3B1FD3ECEE007FA2AB /* SkinManagerCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1F3C3D1FD3ECEE007FA2AB /* SkinManagerCore */ = {
+			isa = PBXGroup;
+			children = (
+				CFFF8D831FD3EDC2005CF574 /* SkinCategory */,
+				CFFF8D951FD3EDC2005CF574 /* SkinManager.h */,
+				CFFF8D941FD3EDC2005CF574 /* SkinManager.m */,
+				CFFF8D961FD3EDC2005CF574 /* UIKitCoder */,
+				CF1F3C3E1FD3ECEE007FA2AB /* SkinManagerCore.h */,
+				CF1F3C3F1FD3ECEE007FA2AB /* Info.plist */,
+			);
+			path = SkinManagerCore;
+			sourceTree = "<group>";
+		};
+		CFFF8D831FD3EDC2005CF574 /* SkinCategory */ = {
+			isa = PBXGroup;
+			children = (
+				CFFF8D841FD3EDC2005CF574 /* NSBundle+Skin.h */,
+				CFFF8D851FD3EDC2005CF574 /* NSBundle+Skin.m */,
+				CFFF8D861FD3EDC2005CF574 /* NSCoder+Skin.h */,
+				CFFF8D871FD3EDC2005CF574 /* NSCoder+Skin.m */,
+				CFFF8D881FD3EDC2005CF574 /* UIBarButtonItem+Skin.h */,
+				CFFF8D891FD3EDC2005CF574 /* UIBarButtonItem+Skin.m */,
+				CFFF8D8A1FD3EDC2005CF574 /* UIButton+Skin.h */,
+				CFFF8D8B1FD3EDC2005CF574 /* UIButton+Skin.m */,
+				CFFF8D8C1FD3EDC2005CF574 /* UIImage+Skin.h */,
+				CFFF8D8D1FD3EDC2005CF574 /* UIImage+Skin.m */,
+				CFFF8D8E1FD3EDC2005CF574 /* UIImageView+Skin.h */,
+				CFFF8D8F1FD3EDC2005CF574 /* UIImageView+Skin.m */,
+				CFFF8D901FD3EDC2005CF574 /* UINib+Skin.h */,
+				CFFF8D911FD3EDC2005CF574 /* UINib+Skin.m */,
+				CFFF8D921FD3EDC2005CF574 /* UIStoryboard+Skin.h */,
+				CFFF8D931FD3EDC2005CF574 /* UIStoryboard+Skin.m */,
+			);
+			path = SkinCategory;
+			sourceTree = "<group>";
+		};
+		CFFF8D961FD3EDC2005CF574 /* UIKitCoder */ = {
+			isa = PBXGroup;
+			children = (
+				CFFF8D971FD3EDC2005CF574 /* UIBarButtonItemCoder.h */,
+				CFFF8D981FD3EDC2005CF574 /* UIBarButtonItemCoder.m */,
+				CFFF8D991FD3EDC2005CF574 /* UIButtonCoder.h */,
+				CFFF8D9A1FD3EDC2005CF574 /* UIButtonCoder.m */,
+				CFFF8D9B1FD3EDC2005CF574 /* UIImageViewCoder.h */,
+				CFFF8D9C1FD3EDC2005CF574 /* UIImageViewCoder.m */,
+			);
+			path = UIKitCoder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF1F3C381FD3ECEE007FA2AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFF8D9D1FD3EDC2005CF574 /* NSBundle+Skin.h in Headers */,
+				CFFF8DA91FD3EDC2005CF574 /* UINib+Skin.h in Headers */,
+				CFFF8DAF1FD3EDC2005CF574 /* UIBarButtonItemCoder.h in Headers */,
+				CF1F3C401FD3ECEE007FA2AB /* SkinManagerCore.h in Headers */,
+				CFFF8DB31FD3EDC2005CF574 /* UIImageViewCoder.h in Headers */,
+				CFFF8DB11FD3EDC2005CF574 /* UIButtonCoder.h in Headers */,
+				CFFF8DA11FD3EDC2005CF574 /* UIBarButtonItem+Skin.h in Headers */,
+				CFFF8DA71FD3EDC2005CF574 /* UIImageView+Skin.h in Headers */,
+				CFFF8DA51FD3EDC2005CF574 /* UIImage+Skin.h in Headers */,
+				CFFF8D9F1FD3EDC2005CF574 /* NSCoder+Skin.h in Headers */,
+				CFFF8DAB1FD3EDC2005CF574 /* UIStoryboard+Skin.h in Headers */,
+				CFFF8DA31FD3EDC2005CF574 /* UIButton+Skin.h in Headers */,
+				CFFF8DAE1FD3EDC2005CF574 /* SkinManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CF1F3C3A1FD3ECEE007FA2AB /* SkinManagerCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF1F3C431FD3ECEE007FA2AB /* Build configuration list for PBXNativeTarget "SkinManagerCore" */;
+			buildPhases = (
+				CF1F3C361FD3ECEE007FA2AB /* Sources */,
+				CF1F3C371FD3ECEE007FA2AB /* Frameworks */,
+				CF1F3C381FD3ECEE007FA2AB /* Headers */,
+				CF1F3C391FD3ECEE007FA2AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkinManagerCore;
+			productName = SkinManagerCore;
+			productReference = CF1F3C3B1FD3ECEE007FA2AB /* SkinManagerCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF1F3C321FD3ECEE007FA2AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = wangyong;
+				TargetAttributes = {
+					CF1F3C3A1FD3ECEE007FA2AB = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CF1F3C351FD3ECEE007FA2AB /* Build configuration list for PBXProject "SkinManagerCore" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1F3C311FD3ECEE007FA2AB;
+			productRefGroup = CF1F3C3C1FD3ECEE007FA2AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF1F3C3A1FD3ECEE007FA2AB /* SkinManagerCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF1F3C391FD3ECEE007FA2AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF1F3C361FD3ECEE007FA2AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFF8DA41FD3EDC2005CF574 /* UIButton+Skin.m in Sources */,
+				CFFF8DA21FD3EDC2005CF574 /* UIBarButtonItem+Skin.m in Sources */,
+				CFFF8DB21FD3EDC2005CF574 /* UIButtonCoder.m in Sources */,
+				CFFF8DB01FD3EDC2005CF574 /* UIBarButtonItemCoder.m in Sources */,
+				CFFF8DA61FD3EDC2005CF574 /* UIImage+Skin.m in Sources */,
+				CFFF8DAD1FD3EDC2005CF574 /* SkinManager.m in Sources */,
+				CFFF8DA81FD3EDC2005CF574 /* UIImageView+Skin.m in Sources */,
+				CFFF8D9E1FD3EDC2005CF574 /* NSBundle+Skin.m in Sources */,
+				CFFF8DAC1FD3EDC2005CF574 /* UIStoryboard+Skin.m in Sources */,
+				CFFF8DA01FD3EDC2005CF574 /* NSCoder+Skin.m in Sources */,
+				CFFF8DB41FD3EDC2005CF574 /* UIImageViewCoder.m in Sources */,
+				CFFF8DAA1FD3EDC2005CF574 /* UINib+Skin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF1F3C411FD3ECEE007FA2AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF1F3C421FD3ECEE007FA2AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF1F3C441FD3ECEE007FA2AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SkinManagerCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangyong.SkinManagerCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF1F3C451FD3ECEE007FA2AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SkinManagerCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangyong.SkinManagerCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF1F3C351FD3ECEE007FA2AB /* Build configuration list for PBXProject "SkinManagerCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1F3C411FD3ECEE007FA2AB /* Debug */,
+				CF1F3C421FD3ECEE007FA2AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF1F3C431FD3ECEE007FA2AB /* Build configuration list for PBXNativeTarget "SkinManagerCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1F3C441FD3ECEE007FA2AB /* Debug */,
+				CF1F3C451FD3ECEE007FA2AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF1F3C321FD3ECEE007FA2AB /* Project object */;
+}
