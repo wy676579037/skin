@@ -17,7 +17,7 @@
 
 @property(strong,nonatomic) NSBundle *bundle;
 
-
+//解决由于UIImage图片缓存 导致图片名称无法获取的问题
 -(void)cacheImageName:(NSString *) imageName with:(UIImage *)image;
 
 -(NSString *)getImageName:(UIImage *)image;
