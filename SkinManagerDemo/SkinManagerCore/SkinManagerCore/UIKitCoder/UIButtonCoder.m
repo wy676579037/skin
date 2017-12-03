@@ -7,13 +7,31 @@
 //
 
 #import "UIButtonCoder.h"
+#import "SkinManager.h"
+
 
 @implementation UIButtonCoder
+
+
+@end
+
+
+@interface UIButtonImageCoder()
+
+@property(strong,nonatomic) NSMutableArray<NSString *> *UIResourceName;
 
 @end
 
 
 @implementation UIButtonImageCoder
+
+-(void)addResourceName:(NSString *)resourceName{
+    [self.UIResourceName addObject:resourceName];
+    
+    if (self.UIImage) {
+        
+    }
+}
 
 -(NSMutableArray<NSString *> *)UIResourceName{
     if (_UIResourceName) {
@@ -27,7 +45,8 @@
     if (!self.UIImage) {
         return nil;
     }
-    return [self.UIResourceName firstObject];
+    NSString *imageName = [self.UIResourceName firstObject];
+    return imageName;
 }
 
 -(NSString *)getBackgroundImageName{

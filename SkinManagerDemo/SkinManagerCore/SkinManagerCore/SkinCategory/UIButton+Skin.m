@@ -13,8 +13,6 @@
 
 @implementation UIButton (Skin)
 
-
-
 + (void)load
 {
     Method otherMehtod = class_getInstanceMethod(self, @selector(swizz_initWithCoder:));

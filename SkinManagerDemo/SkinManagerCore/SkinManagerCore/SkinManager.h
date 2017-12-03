@@ -17,6 +17,11 @@
 
 @property(strong,nonatomic) NSBundle *bundle;
 
+
+-(void)cacheImageName:(NSString *) imageName with:(UIImage *)image;
+
+-(NSString *)getImageName:(UIImage *)image;
+
 -(void)setOriginBundle:(NSBundle *)originB exchangeBundle:(NSBundle *)otherB;
 
 -(NSBundle *)getImageExchangeBundle:(NSBundle *)bundle;

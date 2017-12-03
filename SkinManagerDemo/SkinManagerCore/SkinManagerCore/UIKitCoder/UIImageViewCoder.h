@@ -15,7 +15,7 @@
 
 @property(strong,nonatomic) UIImage *UIHighlightedImage;
 
-@property(strong,nonatomic) NSMutableArray<NSString *> *UIResourceName;
+-(void)addResourceName:(NSString *)resourceName;
 
 -(NSString *)getImageName;
 

@@ -31,11 +31,11 @@
 
 @property(copy,nonatomic) NSString *UITitle;
 
-@property(strong,nonatomic) NSMutableArray<NSString *> *UIResourceName;
-
 @property(strong,nonatomic) UIImage *UIImage;
 
 @property(strong,nonatomic) UIImage *UIBackgroundImage;
+
+-(void)addResourceName:(NSString *)resourceName;
 
 -(NSString *)getImageName;
 

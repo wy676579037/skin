@@ -19,8 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSBundle *blueBundle = [NSBundle bundleForClass:NSClassFromString(@"BluePlugin")];
+    NSBundle *yellowBundle = [NSBundle bundleForClass:NSClassFromString(@"YellowPlugin")];
+
     [[SkinManager sharedInstance] setOriginBundle:[NSBundle mainBundle]
-                                   exchangeBundle:blueBundle];
+                                   exchangeBundle:yellowBundle];
+    
     // Override point for customization after application launch.
     return YES;
 }

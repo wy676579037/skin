@@ -12,6 +12,9 @@
 
 @property(strong,nonatomic) NSMutableDictionary *skinDic;
 
+@property(strong,nonatomic) NSMutableDictionary *imageDic;
+
+
 @end
 
 
@@ -28,6 +31,15 @@
     
 }
 
+-(void)cacheImageName:(NSString *)imageName with:(UIImage *)image{
+    NSString *key = [image description];
+    [self.imageDic setObject:imageName forKey:key];
+}
+
+-(NSString *)getImageName:(UIImage *)image{
+    NSString *key = [image description];
+    return [self.imageDic objectForKey:key];
+}
 
 -(void)setOriginBundle:(NSBundle *)originB exchangeBundle:(NSBundle *)otherB{
     [self.skinDic setObject:otherB forKey:[originB bundlePath]];
@@ -44,6 +56,14 @@
     }
     _skinDic = [NSMutableDictionary new];
     return _skinDic;
+}
+
+-(NSMutableDictionary *)imageDic{
+    if (_imageDic) {
+        return _imageDic;
+    }
+    _imageDic = [NSMutableDictionary new];
+    return _imageDic;
 }
 
 @end

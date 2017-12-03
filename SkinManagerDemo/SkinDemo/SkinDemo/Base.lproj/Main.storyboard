@@ -20,11 +20,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="7VR-pd-Yf6">
                                 <rect key="frame" x="175.5" y="321.5" width="24" height="24"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fML-ZJ-UP1">
+                                <rect key="frame" x="157" y="120" width="61" height="24"/>
+                                <state key="normal" title="测试" image="test">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="Xx8-zY-tmE">
+                                <rect key="frame" x="175.5" y="543" width="24" height="24"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fML-ZJ-UP1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="B6k-97-AzV"/>
+                            <constraint firstItem="Xx8-zY-tmE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HMy-VO-Kz3"/>
                             <constraint firstItem="7VR-pd-Yf6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MFD-cL-62c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xx8-zY-tmE" secondAttribute="bottom" constant="100" id="TKm-xF-0Sa"/>
                             <constraint firstItem="7VR-pd-Yf6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iGl-8R-WIT"/>
+                            <constraint firstItem="fML-ZJ-UP1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yio-iO-IE4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

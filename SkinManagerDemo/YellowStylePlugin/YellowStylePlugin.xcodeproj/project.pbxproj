@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CF8DCD341FD416B700A74D54 /* YellowStylePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = CF8DCD321FD416B700A74D54 /* YellowStylePlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF8DCD431FD4170E00A74D54 /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8DCD421FD4170E00A74D54 /* image.xcassets */; };
+		CF8DCD511FD41D9C00A74D54 /* YellowPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = CF8DCD4F1FD41D9C00A74D54 /* YellowPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF8DCD521FD41D9C00A74D54 /* YellowPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8DCD501FD41D9C00A74D54 /* YellowPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		CF8DCD321FD416B700A74D54 /* YellowStylePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YellowStylePlugin.h; sourceTree = "<group>"; };
 		CF8DCD331FD416B700A74D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF8DCD421FD4170E00A74D54 /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		CF8DCD4F1FD41D9C00A74D54 /* YellowPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YellowPlugin.h; sourceTree = "<group>"; };
+		CF8DCD501FD41D9C00A74D54 /* YellowPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YellowPlugin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 				CF8DCD321FD416B700A74D54 /* YellowStylePlugin.h */,
 				CF8DCD331FD416B700A74D54 /* Info.plist */,
 				CF8DCD421FD4170E00A74D54 /* image.xcassets */,
+				CF8DCD4F1FD41D9C00A74D54 /* YellowPlugin.h */,
+				CF8DCD501FD41D9C00A74D54 /* YellowPlugin.m */,
 			);
 			path = YellowStylePlugin;
 			sourceTree = "<group>";
@@ -63,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF8DCD341FD416B700A74D54 /* YellowStylePlugin.h in Headers */,
+				CF8DCD511FD41D9C00A74D54 /* YellowPlugin.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8DCD521FD41D9C00A74D54 /* YellowPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

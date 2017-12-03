@@ -37,7 +37,6 @@
     if (barBtnIItemCoder) {
         [self setUP_BarBtnItemCoder:key value:value];
     }
-    
     return value;
 }
 
@@ -67,7 +66,7 @@
     }
     
     if ([key isEqualToString:@"UIResourceName"]) {
-        [imageViewCoder.UIResourceName addObject:value];
+        [imageViewCoder addResourceName:value];
     }
     
 }
@@ -93,11 +92,12 @@
     }
     UIButtonImageCoder *curImageCoder = buttonCoder.curImageCoer;
     
+    
     if ([key isEqualToString:@"UITitle"]) {
         curImageCoder.UITitle = value;
     }
     if ([key isEqualToString:@"UIResourceName"]) {
-        [curImageCoder.UIResourceName addObject:value];
+        [curImageCoder addResourceName:value];
     }
     if ([key isEqualToString:@"UIImage"]) {
         curImageCoder.UIImage = value;
