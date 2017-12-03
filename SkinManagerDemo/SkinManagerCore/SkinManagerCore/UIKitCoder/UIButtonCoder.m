@@ -27,11 +27,9 @@
 
 -(void)addResourceName:(NSString *)resourceName{
     [self.UIResourceName addObject:resourceName];
-    
-    if (self.UIImage) {
-        
-    }
 }
+
+
 
 -(NSMutableArray<NSString *> *)UIResourceName{
     if (_UIResourceName) {
@@ -45,16 +43,64 @@
     if (!self.UIImage) {
         return nil;
     }
-    NSString *imageName = [self.UIResourceName firstObject];
-    return imageName;
+    
+    NSString *imageName = [[SkinManager sharedInstance] getImageName:self.UIImage];
+    
+    if (imageName) {
+        return imageName;
+    }
+    
+    return [self.UIResourceName firstObject];
 }
 
 -(NSString *)getBackgroundImageName{
     if (!self.UIBackgroundImage) {
         return nil;
     }
+    NSString *backImageName = [[SkinManager sharedInstance] getImageName:self.UIBackgroundImage];
+    if (backImageName) {
+        return  backImageName;
+    }
     return [self.UIResourceName lastObject];
 }
+
+
+
+-(void)setUIImage:(UIImage *)UIImage{
+    _UIImage = UIImage;
+    if (!UIImage) {
+        return;
+    }
+    NSString *tempName = [self.UIResourceName firstObject];
+    if (!tempName) {
+        return;
+    }
+    NSString *imageName = [[SkinManager sharedInstance] getImageName:self.UIImage];
+    if (imageName) {
+        return;
+    }
+    [[SkinManager sharedInstance] cacheImageName:tempName
+                                            with:self.UIImage];
+}
+
+
+-(void)setUIBackgroundImage:(UIImage *)UIBackgroundImage{
+    _UIBackgroundImage = UIBackgroundImage;
+    if (!UIBackgroundImage) {
+        return;
+    }
+    NSString *tempName = [self.UIResourceName lastObject];
+    if (!tempName) {
+        return;
+    }
+    NSString *imageName = [[SkinManager sharedInstance] getImageName:self.UIBackgroundImage];
+    if (imageName) {
+        return;
+    }
+    [[SkinManager sharedInstance] cacheImageName:tempName
+                                            with:self.UIBackgroundImage];
+}
+
 
 
 @end
