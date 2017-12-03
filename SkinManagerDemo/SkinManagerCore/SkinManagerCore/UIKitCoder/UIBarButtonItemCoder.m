@@ -10,4 +10,11 @@
 
 @implementation UIBarButtonItemCoder
 
+-(NSString *)getImageName{
+    if (!_UIImage) {
+        return nil;
+    }
+    return [self.UIResourceName firstObject];
+}
+
 @end

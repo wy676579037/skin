@@ -15,5 +15,6 @@
 
 @property(strong,nonatomic) NSMutableArray<NSString *> *UIResourceName;
 
+-(NSString *)getImageName;
 
 @end

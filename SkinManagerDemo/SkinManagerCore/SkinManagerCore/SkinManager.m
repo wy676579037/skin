@@ -25,6 +25,7 @@
         _sharedInstance = [[SkinManager alloc] init];
     });
     return _sharedInstance;
+    
 }
 
 

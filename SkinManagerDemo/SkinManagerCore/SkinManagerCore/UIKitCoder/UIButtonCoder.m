@@ -23,5 +23,19 @@
     return _UIResourceName;
 }
 
+-(NSString *)getImageName{
+    if (!self.UIImage) {
+        return nil;
+    }
+    return [self.UIResourceName firstObject];
+}
+
+-(NSString *)getBackgroundImageName{
+    if (!self.UIBackgroundImage) {
+        return nil;
+    }
+    return [self.UIResourceName lastObject];
+}
+
 
 @end

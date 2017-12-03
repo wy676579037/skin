@@ -37,5 +37,9 @@
 
 @property(strong,nonatomic) UIImage *UIBackgroundImage;
 
+-(NSString *)getImageName;
+
+-(NSString *)getBackgroundImageName;
+
 @end
 
