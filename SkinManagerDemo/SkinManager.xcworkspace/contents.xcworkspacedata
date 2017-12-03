@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BlueStyePlugin/BlueStyePlugin.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:YellowStylePlugin/YellowStylePlugin.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SkinManagerCore/SkinManagerCore.xcodeproj">
    </FileRef>
    <FileRef

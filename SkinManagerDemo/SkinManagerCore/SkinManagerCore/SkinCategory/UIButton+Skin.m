@@ -37,7 +37,7 @@
     
     NSBundle *currentBundle = [SkinManager sharedInstance].bundle;
     NSBundle *exchangeBundle = [[SkinManager sharedInstance] getImageExchangeBundle:currentBundle];
-    if (exchangeBundle) {
+    if (!exchangeBundle) {
         return;
     }
     

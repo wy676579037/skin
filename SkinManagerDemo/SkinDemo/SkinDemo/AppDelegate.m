@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+@import SkinManagerCore;
+@import BlueStyePlugin;
 
 @interface AppDelegate ()
 
@@ -16,6 +18,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSBundle *blueBundle = [NSBundle bundleForClass:NSClassFromString(@"BluePlugin")];
+    [[SkinManager sharedInstance] setOriginBundle:[NSBundle mainBundle]
+                                   exchangeBundle:blueBundle];
     // Override point for customization after application launch.
     return YES;
 }

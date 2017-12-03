@@ -13,6 +13,10 @@
 		CF1F3C251FD3ECCF007FA2AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1F3C241FD3ECCF007FA2AB /* Assets.xcassets */; };
 		CF1F3C281FD3ECCF007FA2AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1F3C261FD3ECCF007FA2AB /* LaunchScreen.storyboard */; };
 		CF1F3C2B1FD3ECCF007FA2AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1F3C2A1FD3ECCF007FA2AB /* main.m */; };
+		CF8DCD3B1FD416DE00A74D54 /* BlueStyePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8DCD3A1FD416DE00A74D54 /* BlueStyePlugin.framework */; };
+		CF8DCD3C1FD416DE00A74D54 /* BlueStyePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF8DCD3A1FD416DE00A74D54 /* BlueStyePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF8DCD3E1FD416DE00A74D54 /* YellowStylePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8DCD3D1FD416DE00A74D54 /* YellowStylePlugin.framework */; };
+		CF8DCD3F1FD416DE00A74D54 /* YellowStylePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF8DCD3D1FD416DE00A74D54 /* YellowStylePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CFFF8DB61FD3EDFC005CF574 /* SkinManagerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFF8DB51FD3EDFC005CF574 /* SkinManagerCore.framework */; };
 		CFFF8DB71FD3EDFC005CF574 /* SkinManagerCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFFF8DB51FD3EDFC005CF574 /* SkinManagerCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -24,7 +28,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CF8DCD3C1FD416DE00A74D54 /* BlueStyePlugin.framework in Embed Frameworks */,
 				CFFF8DB71FD3EDFC005CF574 /* SkinManagerCore.framework in Embed Frameworks */,
+				CF8DCD3F1FD416DE00A74D54 /* YellowStylePlugin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +48,8 @@
 		CF1F3C271FD3ECCF007FA2AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF1F3C291FD3ECCF007FA2AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF1F3C2A1FD3ECCF007FA2AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF8DCD3A1FD416DE00A74D54 /* BlueStyePlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlueStyePlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8DCD3D1FD416DE00A74D54 /* YellowStylePlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YellowStylePlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFFF8DB51FD3EDFC005CF574 /* SkinManagerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SkinManagerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,7 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8DCD3B1FD416DE00A74D54 /* BlueStyePlugin.framework in Frameworks */,
 				CFFF8DB61FD3EDFC005CF574 /* SkinManagerCore.framework in Frameworks */,
+				CF8DCD3E1FD416DE00A74D54 /* YellowStylePlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +70,8 @@
 		CF1F3C0F1FD3ECCF007FA2AB = {
 			isa = PBXGroup;
 			children = (
+				CF8DCD3D1FD416DE00A74D54 /* YellowStylePlugin.framework */,
+				CF8DCD3A1FD416DE00A74D54 /* BlueStyePlugin.framework */,
 				CFFF8DB51FD3EDFC005CF574 /* SkinManagerCore.framework */,
 				CF1F3C1A1FD3ECCF007FA2AB /* SkinDemo */,
 				CF1F3C191FD3ECCF007FA2AB /* Products */,
