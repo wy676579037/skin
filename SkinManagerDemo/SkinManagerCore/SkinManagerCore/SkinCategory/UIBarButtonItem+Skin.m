@@ -26,10 +26,31 @@
 -(instancetype)swizz_initWithCoder:(NSCoder *)aDecoder{
     [SkinManager sharedInstance].barButtonItemCoder = [UIBarButtonItemCoder new];
     UIBarButtonItem *btnItem = [self swizz_initWithCoder:aDecoder];
-    
+    [self exchangeImage:btnItem];
     [SkinManager sharedInstance].barButtonItemCoder = nil;
     return btnItem;
 }
+
+-(void)exchangeImage:(UIBarButtonItem *)btnItem{
+    
+    NSBundle *currentBundle = [SkinManager sharedInstance].bundle;
+    NSBundle *exchangeBundle = [[SkinManager sharedInstance] getExchangeBundle:currentBundle];
+    if (exchangeBundle) {
+        return;
+    }
+    UIBarButtonItemCoder *itemCoder = [SkinManager sharedInstance].barButtonItemCoder;
+    
+    NSString *imageName = [itemCoder getImageName];
+    if (imageName) {
+        UIImage *image = [UIImage imageNamed:imageName
+                                    inBundle:exchangeBundle
+               compatibleWithTraitCollection:nil];
+        if (image) {
+            [btnItem setImage:image];
+        }
+    }
+}
+
 
 
 
