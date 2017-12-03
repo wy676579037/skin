@@ -15,5 +15,5 @@ FOUNDATION_EXPORT double SkinManagerCoreVersionNumber;
 FOUNDATION_EXPORT const unsigned char SkinManagerCoreVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SkinManagerCore/PublicHeader.h>
-
+#import <SkinManagerCore/SkinManager.h>
 
